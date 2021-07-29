@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#745679"
+    android:orientation="vertical"
+    tools:context=".TelaPrincipal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="-41dp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etNickName"
+                android:layout_width="320dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/botao_customizado"
+                android:inputType="text"
+                android:lines="1"
+                android:text="digite o seu Nome"
+                android:onClick="limpaCampoNickName"
+                android:textAlignment="center"
+                android:textColor="#C4C4C4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et"
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/botao_customizado"
+                android:clickable="false"
+                android:enabled="false"
+                android:text="Escolha o Seu Avatar"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etNickName"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDisciplina"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/botao_customizado"
+                android:text="Proximo"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                android:onClick="proximo"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnUser1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/user1mini"
+                android:onClick="user1"
+                app:layout_constraintBottom_toBottomOf="@+id/btnUser2"
+                app:layout_constraintEnd_toStartOf="@+id/btnUser2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnUser2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnUser2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/user2mini"
+                android:onClick="user2"
+                app:layout_constraintBottom_toTopOf="@+id/btnDisciplina"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et"
+                app:layout_constraintVertical_bias="0.325" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnUser3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/user3mini"
+                android:onClick="user3"
+                app:layout_constraintBottom_toBottomOf="@+id/btnUser2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnUser2"
+                app:layout_constraintTop_toTopOf="@+id/btnUser2"
+                app:layout_constraintVertical_bias="0.322" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

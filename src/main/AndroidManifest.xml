@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.projetofinal">
+    <application
+        android:isGame="true"
+        android:logo="@drawable/tela1"
+        android:allowBackup="true"
+        android:icon="@drawable/tela1"
+        android:label="Game of Gallows"
+        android:installLocation="internalOnly"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjetoFinal">
+
+        <activity android:name=".TelaInicial" android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TelaPrincipal" android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".TelaCategoria" android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".TelaJogo" android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".TelaMorreu" android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".TelaViveu" android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".TelaCreditos" android:screenOrientation="portrait">
+
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.VIBRATE"
+        tools:ignore="ManifestOrder" />
+</manifest>

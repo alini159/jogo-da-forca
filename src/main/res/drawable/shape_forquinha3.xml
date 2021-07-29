@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape android:shape="rectangle">
+            <solid
+                android:color="#006F3A"/>
+            <stroke
+                android:width="20dp"
+                android:color="#B04113"
+                />
+            <corners
+                android:radius="20dp"
+                />
+            <size
+                android:width="300dp"
+                android:height="300dp"
+                />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/forquinha2" android:height="260dp" android:gravity="center" />
+
+</layer-list>
